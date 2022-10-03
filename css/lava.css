@@ -1,0 +1,130 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family:sans-serif;
+  position:relative;
+  background-color: #3D3D3D;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* 0 header  */
+.header .container {
+  display:flex;
+  justify-content:space-between;
+}
+.header .container .logo img {
+  width:100px;
+}
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  display:flex;
+  justify-content:space-between;
+  width:40%;
+  align-items:center;
+}
+nav ul li a {
+  color: white;
+  font-size: 22px;
+}
+.active {
+  padding:5px 10px;
+  border: solid 3px white;
+}
+/* 1 header */
+
+/* 0 land */
+.landing  {
+  background:url("land-back.jpg");
+  z-index:-1;
+  background-position:center;
+  background-size:cover;
+  height:100vh;
+  margin-top:-150px;
+}
+.landing .container {
+  display:flex;
+  justify-content:center;
+  min-height:100%;
+  flex-direction:column;
+}
+.landing .container h1 {
+  color:white;
+  margin-top:400px;
+  font-size:100px;
+}
+.landing .container h1 span {
+  color: #4D90A4;
+  position:relative;
+  letter-spacing:5px;
+  font-size:18px;
+  text-transform:uppercase;
+  font-weight:500;
+  display:block;
+}
+.landing .container h1 span:after {
+  content:" ";
+  border-bottom: solid 4px white;
+  width:50px;
+  position:absolute;
+  left:0px;
+  bottom:-10px;
+}
+.text-land {
+  text-align:center;
+  color:white;
+}
+.text-land h2 {
+  font-size:30px;
+}
+.text-land span {
+
+}
+.text-land p {
+
+}
+/* 1 land */
