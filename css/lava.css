@@ -224,9 +224,31 @@ nav ul li a {
   transform:translate(-50%,-50%);
   width:28%;
 }
+button {
+  border: solid 3px white;
+  background-color:transparent;
+  color:white;
+  text-transform:uppercase;
+  font-weight:bold;
+  letter-spacing:2px;
+  padding:10px;
+  position:absolute;
+  left:50%;
+  top:70%;
+  transform:translate(-50%,-10%);
+  width:10%;
+}
 @media (max-width: 768px) {
   .input {
     width:70%;
+  }
+  button {
+    font-size:10px;
+  }
+}
+@media (max-width: 992px) {
+  button {
+   width:20%;
   }
 }
 /* 1 index-box */
@@ -275,7 +297,6 @@ nav ul li a {
     padding-bottom:10px;
   }
 }
-
 .footer  nav ul li a:hover {
   color:black;
 }
